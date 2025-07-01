@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    body {
+        background-color: #778899;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+
+
+header {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 20px;
+  background-color: #BDB76B;
+  color: #000080;
+  border-bottom: 1px solid #000080;
+  position: fixed;
+  width: 100%;
+
+   }
+        
+   
+   
+   
+   
+   /* To make header mobile responsive */
+   @media (max-width: 768px) {
+       
+       header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+           
+       }
+
+}
+
+
+
+.logo {
+       width: 160px;
+       height: 70px;
+       
+   }
+
+
+ .nav {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 0;
+  gap: 20px;
+ 
+  
+}
+
+   
+
+      .buttons {
+      
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 20px;
+        padding: 5px;
+        
+    }
+
+
+.login-button, .sign-up-button {
+    
+    width:  100px;
+    height:  35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.login-button {
+    
+    background-color: #000080;
+    color: #BDB76B;
+    
+}
+
+.login-button:hover {
+    background-color: #BDB76B;
+    color: #000080;
+    border: 2px solid #000080;
+}
+
+.sign-up-button {
+    
+    background-color: #BDB76B;
+    color: #000080;
+    border: 2px solid #000080;
+    transition: 0.15s;
+    cursor: pointer;
+}
+    
+    .sign-up-button:hover {
+        
+    background-color: #000080;
+    color: #BDB76B;
+    }
+
+
+.container {
+  
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+
+ .inner-container {
+     
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: justify;
+     background-color: whitesmoke;
+     border-radius: 10px;
+     color: #000080;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-bottom: 20px;
+     margin-bottom: 20px;
+     line-height: 30px;
+   
+     
+ }
+
+.article-image {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+      
+}
+
+
+  .article-image-two {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+    .article-image-three {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+/* To make body mobile responsive */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 200px;
+    }
+    
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        width: 348px;
+        line-height: 25px;
+        border-radius: 10px;
+    }
+    
+    
+    .article-image {.
+        margin-left: 0;
+        
+    }
+    
+    
+    .article-image-two {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+    
+    
+    .sub-topic {
+        line-height: 30px;
+    }
+}
+
+
+
+.title, .author-name {
+    
+   text-align: center;
+   margin-top: 20px;
+   line-height: 30px;
+   
+}
+
+.title {
+    line-height: 30px;
+    color: #000080;
+
+}
+
+.author-name {
+    
+    color: maroon;
+    
+}
+
+
+li {
+    list-style: none;
+}
+
+
+
+.sub-topic {
+    
+    text-align: center;
+    color: maroon;
+}
+
+.author-bio {
+    color: maroon;
+}
+
+
+
+
+
+
+.comment-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    
+}
+
+
+.make-a-comment {
+    
+    color: #000080;
+   
+}
+
+
+.text-area {
+    
+    width: 250px;
+    height: 150px;
+    border: 2px solid maroon;
+    border-radius: 8px;
+}
+
+
+.text-area::placeholder {
+    font-weight: 600;
+    color: maroon;
+    
+}
+
+
+
+.comment-buttons {
+  
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 20px;
+    
+}
+
+
+
+.send, .reset {
+    
+    background-color: maroon;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    transition: 0.15s;
+    cursor: pointer;
+    
+}
+ 
+ 
+ .send:hover {
+ 
+     opacity: 0.7;
+     
+ }
+ 
+ .reset:hover {
+     opacity: 0.7;
+ }
+ 
+ 
+ footer {
+     
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #BDB76B;
+  color: #000080;
+  border-top: 1px solid #000080;
+ }
+ 
+ 
